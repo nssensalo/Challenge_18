@@ -44,7 +44,7 @@ Import the following libraries and extensions: :
 * ### Note updated history in dataframe below and drop down menu in left side bar
 
 
-![SampleCode](./markedown_images/Screenshot(182).png)
+![SampleCode](Screenshot(182).png)
 
 
 ---
