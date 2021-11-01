@@ -75,7 +75,7 @@ class Block:
     record: Record
 
     creator_id: int
-    prev_hash: str = 0
+    prev_hash: str = "0"
     timestamp: str = datetime.datetime.utcnow().strftime("%H:%M:%S")
     nonce: str = 0
 
@@ -174,15 +174,15 @@ pychain = setup()
 
 # @TODO:
 # Add an input area where you can get a value for `sender` from the user.
-input_data = st.text_input("sender")
+sender = st.text_input("sender")
 
 # @TODO:
 # Add an input area where you can get a value for `receiver` from the user.
-input_data = st.text_input("reciever")
+reciever = st.text_input("reciever")
 
 # @TODO:
 # Add an input area where you can get a value for `amount` from the user.
-input_data = st.text_input("amount")
+amount = st.text_input("amount")
 
 if st.button("Add Block"):
     prev_block = pychain.chain[-1]
@@ -193,8 +193,9 @@ if st.button("Add Block"):
     # which is set equal to a `Record` that contains the `sender`, `receiver`,
     # and `amount` values
     new_block = Block(
-        record = Record(sender, reciever, amount),
-        prev_block=prev_block_hash
+        record = Record( sender,reciever,amount),
+        creator_id = 42,
+        prev_hash=prev_block_hash
     )
 
     pychain.add_block(new_block)
@@ -206,7 +207,8 @@ if st.button("Add Block"):
 st.markdown("## The PyChain Ledger")
 
 pychain_df = pd.DataFrame(pychain.chain)
-st.write(pychain_df)
+#st.write(pychain_df)
+st.text(pychain_df)
 
 difficulty = st.sidebar.slider("Block Difficulty", 1, 5, 2)
 pychain.difficulty = difficulty
