@@ -44,7 +44,7 @@ Import the following libraries and extensions: :
 * ### Note updated history in dataframe below and drop down menu in left side bar
 
 
-![SampleCode](Screenshot(182).png)
+![SampleCode](https://github.com/nssensalo/Challenge_18/blob/main/Screenshot%20(182).png)
 
 
 ---
