@@ -44,10 +44,14 @@ Import the following libraries and extensions: :
 * ### Note updated history in dataframe below and drop down menu in left side bar
 
 
+
+### Run application
 ![SampleCode](https://github.com/nssensalo/Challenge_18/blob/main/markdown_images/Screenshot%20(182).png)
 
+### See validation
 ![SampleCode](https://github.com/nssensalo/Challenge_18/blob/main/markdown_images/Screenshot%20(183).png)  
 
+### Note updated history
 ![SampleCode](https://github.com/nssensalo/Challenge_18/blob/main/markdown_images/Screenshot%20(184).png)
 
 ---
